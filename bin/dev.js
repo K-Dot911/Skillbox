@@ -27,12 +27,12 @@ hmrServer.listen(3001, () => {
 const compiler = webpack(webpackServerConfig);
 
 compiler.run((err) => {
-    if(err){
+    if (err) {
         console.log('Compilation failed: ', err);
     }
 
     compiler.watch({}, (err) => {
-        if(err){
+        if (err) {
             console.log('Compilation failed: ', err);
         }
         console.log('Compilation was successfully');
