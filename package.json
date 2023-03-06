@@ -23,6 +23,7 @@
     "@hot-loader/react-dom": "^17.0.2",
     "@types/jest": "^28.1.7",
     "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.10",
     "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
