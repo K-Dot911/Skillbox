@@ -6,7 +6,7 @@
   "scripts": {
     "build:dev": "cross-env NODE_ENV=development webpack --config webpack.config.js",
     "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "dev": "env NODE_ENV=development node ./bin/dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,16 +20,33 @@
   },
   "homepage": "https://github.com/K-Dot911/Skillbox#readme",
   "devDependencies": {
+    "@hot-loader/react-dom": "^17.0.2",
+    "@types/jest": "^28.1.7",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.10",
+    "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
+    "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.3",
+    "less": "^4.1.3",
+    "less-loader": "^11.0.0",
+    "react-hot-loader": "^4.13.0",
+    "style-loader": "^3.3.1",
+    "ts-jest": "^28.0.8",
     "ts-loader": "^9.3.1",
     "typescript": "^4.7.4",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.9.3"
+    "webpack-dev-middleware": "^5.3.3",
+    "webpack-dev-server": "^4.9.3",
+    "webpack-hot-middleware": "^2.25.2",
+    "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   }
 }
